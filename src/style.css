@@ -1,0 +1,252 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+/* Paste the provided spinner CSS code here */
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+  
+  .cube1, .cube2 {
+    background-color: #333;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+    animation: sk-cubemove 1.8s infinite ease-in-out;
+  }
+  
+  .cube2 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  @-webkit-keyframes sk-cubemove {
+    25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+    50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+    75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+    100% { -webkit-transform: rotate(-360deg) }
+  }
+  
+  @keyframes sk-cubemove {
+    25% { 
+      transform: translateX(42px) rotate(-90deg) scale(0.5);
+      -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    } 50% { 
+      transform: translateX(42px) translateY(42px) rotate(-179deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    } 50.1% { 
+      transform: translateX(42px) translateY(42px) rotate(-180deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    } 75% { 
+      transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+      -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    } 100% { 
+      transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+    }
+  }
+  
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    opacity: 0; 
+    animation: fadeInText 0.5s forwards; 
+}
+a{
+    text-decoration: none;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+.navlinks{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    
+}
+.logo{
+    margin-left: 4rem;
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+}
+.hire{
+    padding:  1rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color:#141414 ;
+    border: 4px 0.1rem #2B2B2B;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: rgb(241, 241, 241);
+}
+.hire a{
+    color: #080808;
+}
+.hire:hover{
+    color: #fff;
+    background-color: #2B2B2B;
+    transition: all 0.3s ease-in-out;
+}
+.hire a:hover{
+    color: white;
+}
+.link a{
+    position: relative;
+    padding-bottom: 0.3rem;
+    color: #000;
+    
+}
+.link a:hover{
+    color: #727272;
+}
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #636363;
+    transition: all 0.3s ease;
+    
+}
+.link a:hover::after{
+    width: 100%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    gap: 2rem;
+}
+section img{
+    height: 400px;
+    max-width: 600px;
+    border-radius: 50%;
+}
+.profile{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+span .blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #000000;
+    z-index: 100;
+}
+.profile-p3{
+    width:40vw;
+    font-size: 0.9rem;
+    font-weight:400;
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+
+}
+.profile-text{
+    justify-content: center;
+    align-items: center;
+}
+.profile-p1,.profile-p2{
+    font-size: 2rem;
+    color:#636363;
+}
+.title{
+    font-size: 3rem;
+    color: #080808;
+}
+.icon-resume{
+    display: flex;
+    
+    align-items: center;
+    gap: 1rem;
+   
+}
+.icons{
+    
+    display: flex;
+    gap: 0.8rem;
+    background-color: #ffffff;
+    border: 2px #000 solid ;
+    padding: 10px 30px;
+    border-radius: 2rem;
+}
+.icons a img{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    height: 2rem;
+    opacity: 0; 
+    animation: fadeInImage 1.5s forwards; 
+   
+}
+@keyframes fadeInImage {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: scale(1.1); /* Slightly increase image size */
+    }
+    to {
+      opacity: 1; /* End with full opacity */
+      transform: scale(1); /* Return to original size */
+    }
+  }
+  
+.btn-2 {
+    border: 2px #000 solid ;
+    padding: 12px 20px;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: #fff;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-2 img{
+    height: 1.5rem;
+
+}
+.text{
+    font-weight: 600;
+}
+/* Apply the animation to the text */
+.animation-text p {
+    opacity: 0; /* Initially set text opacity to 0 */
+    animation: fadeInText 1.5s forwards; /* Animation duration and timing */
+  }
+  
+  /* Define the animation keyframes */
+  @keyframes fadeInText {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateY(10px); /* Move text slightly upward */
+    }
+    to {
+      opacity: 1; /* End with full opacity */
+      transform: translateY(0); /* Return to original position */
+    }
+  }

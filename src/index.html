@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>document.onreadystatechange = function () {
+        const loader = document.getElementById("loaderWrapper");
+        if (document.readyState === "complete") {
+          loader.style.display = "none"; // Hide loader when page is fully loaded
+        } else {
+          loader.style.display = "block"; // Show loader while the page is loading
+        }
+      };</script>
+    <div class="loader-wrapper" id="loaderWrapper">
+        <div class="spinner">
+          <div class="cube1"></div>
+          <div class="cube2"></div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="logo">
+            <h2>Rohan Tandale</h2>
+        </div>
+        <ul class="navlinks">
+            <li class="link"><a href="#Projects">Projects</a></li>
+            <li class="link"><a href="#Home">Home</a></li>
+            <li class="link"><a href="#Contact">Contact</a></li>
+            <li class="link"><a href="#About">About</a></li>
+        </ul>
+        <button class="hire" onclick="location.href='./#contact'">
+            Hire me
+        </button>
+    </div>
+    
+    <section class="profile">
+        <div class="profile-text">
+            <span class="blur"></span>
+            <p class="profile-p1">Hello I'm</p>
+            <h1 class="title">Rohan Tandale</h1>
+            <p class="profile-p2">Learner | Software Engineer</p>
+            <p class="profile-p3">I am a Third Year Computer engineering student at Dr DY Patil Institute of Technology, exploring my knowledge in the field of Web Devlopment.</p>
+            <div class="icon-resume">
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/rohan-tandale-0a6782290/" target="_blank" class="icon">
+                        <img src="./assets/linkedin-black.png" alt="Social Media Icon">
+                    </a>
+                    <a href="https://twitter.com/_ranchoo" target="_blank" class="icon">
+                        <img src="./assets/twitter-black.png" alt="Social Media Icon">
+                    </a>
+                    <a href="https://github.com/rohantandale1107" target="_blank" class="icon">
+                        <img src="./assets/github-black.png" alt="Social Media Icon">
+                    </a>
+                    <a href="https://wa.me/9511239846" target="_blank" class="icon">
+                        <img src="./assets/whatsapp-icon-modified.png" alt="Social Media Icon">
+                    </a>
+                </div>
+                <div class="resume">
+                    <button class="btn-2" onclick="window.open('./assets/resume-example.pdf')"> <img src="./assets/download.png" alt=""><div class="text">Download Resume</div></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-pic">
+            <img src="./assets/IMG_20240107_013536_647.jpg" alt="Profile Pic">
+        </div>
+
+      
+    </section>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</body>
+</html>
