@@ -52,6 +52,24 @@
       -webkit-transform: rotate(-360deg);
     }
   }
+  /* Apply the animation to the text */
+.animation-text p {
+  opacity: 0; /* Initially set text opacity to 0 */
+  animation: fadeInText 1.5s forwards; /* Animation duration and timing */
+}
+
+/* Define the animation keyframes */
+@keyframes fadeInText {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(10px); /* Move text slightly upward */
+  }
+  to {
+    opacity: 1; /* End with full opacity */
+    transform: translateY(0); /* Return to original position */
+  }
+}
+
   
 *{
     padding: 0;
@@ -135,24 +153,29 @@ a{
     width: 100%;
 }
 
-section{
-    display: flex;
+header {
+    display: grid;
     justify-content: center;
     margin: auto;
     align-items: center;
     height: 80vh;
     width: 100%;
     gap: 2rem;
+    position: relative;
+    grid-template-columns: repeat(2,1fr);
+
 }
-section img{
+.profile img{
     height: 400px;
     max-width: 600px;
     border-radius: 50%;
+    position: relative;
 }
 .profile{
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
+    display: flex;
 }
 span .blur{
     position: absolute;
@@ -233,20 +256,130 @@ span .blur{
 .text{
     font-weight: 600;
 }
-/* Apply the animation to the text */
-.animation-text p {
-    opacity: 0; /* Initially set text opacity to 0 */
-    animation: fadeInText 1.5s forwards; /* Animation duration and timing */
-  }
+
+
+section .header{
+  margin-top: 5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+.skills{
+  margin-top: 5rem;
+  display:flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
   
-  /* Define the animation keyframes */
-  @keyframes fadeInText {
-    from {
-      opacity: 0; /* Start with opacity 0 */
-      transform: translateY(10px); /* Move text slightly upward */
-    }
-    to {
-      opacity: 1; /* End with full opacity */
-      transform: translateY(0); /* Return to original position */
-    }
-  }
+  
+}
+
+.skills .card{
+    padding: 0 1rem;
+    height: 23rem;
+    width: 16rem;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0, 0,0.3);
+    display: inline-block;
+    text-align: center;
+    justify-content: space-around;
+    border: 2px solid transparent;
+    
+}
+.card:hover{
+  border: 2px rgb(39, 39, 39) solid;
+}
+
+.skill-icon{
+  height: 3rem;
+  
+}
+.h2{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 8rem;
+  padding: 10px 10px;
+}
+
+
+.skill-icons {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.projects h2{
+  margin-top: 10rem;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-weight: 600;
+}
+.project-sec{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.project-sec .cards{
+  padding: 0 1rem;
+    height: 28rem;
+    width: 18rem;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0, 0,0.3);
+    display: inline-block;
+    text-align: center;
+    justify-content: space-around;
+    border: 2px solid transparent;
+}
+.cards:hover{
+  border: 2px rgb(39, 39, 39) solid;
+}
+.cards img{
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+.cards-img{
+  padding: 1rem 0;
+}
+.cards-info{
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+.cards-info p{
+  font-size: 0.9rem;
+  margin-top: 1.3rem;
+  font-weight: 400;
+}
+.links-icon img{
+  height: 1rem;
+  width: 1rem;
+ 
+}
+.link-icon {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.cards-info h5{
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+  margin-left: 5rem;
+  color: #807b7b;
+  padding: 1rem;
+} 
