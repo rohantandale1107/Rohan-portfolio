@@ -1,6 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
 
 /* Paste the provided spinner CSS code here */
 .spinner {
@@ -81,8 +82,11 @@
 }
 body{
     opacity: 0; 
-    animation: fadeInText 0.5s forwards; 
+    animation: fadeInText 0.5s forwards;
+    height: 100%;
+    width: 100%; 
 }
+
 a{
     text-decoration: none;
     
@@ -106,6 +110,7 @@ a{
     margin-left: 4rem;
     font-size: 1.3rem;
     padding-top: 0.5rem;
+    font-family: 'Oswald';
 }
 .hire{
     padding:  1rem 2rem;
@@ -174,6 +179,7 @@ header {
 .profile{
     max-width: 1200px;
     margin: auto;
+    height :35rem;
     padding: 5rem 2rem;
     display: flex;
 }
@@ -330,8 +336,8 @@ section .header{
 }
 .project-sec .cards{
   padding: 0 1rem;
-    height: 28rem;
-    width: 18rem;
+    height: 26rem;
+    width: 23rem;
     background-color: #ffffff;
     transition: all 0.3s ease;
     position: relative;
@@ -346,14 +352,21 @@ section .header{
   border: 2px rgb(39, 39, 39) solid;
 }
 .cards img{
-  width: 100%;
+  width: 97%;
   height: 100%;
   object-fit:fill;
   margin-top: 2rem;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.0);
 }
 .cards-img{
   padding: 1rem 0;
+  
+}
+.cards:hover img {
+  transform: scale(1.1);
+  
 }
 .cards-info{
   padding: 1rem;
@@ -383,3 +396,319 @@ section .header{
   color: #807b7b;
   padding: 1rem;
 } 
+
+.contact{
+ 
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50rem;
+  width: auto;
+  
+}
+.contact h3{
+  margin-top: 8rem;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+}
+.contact h4{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-weight: 600;
+  color: #636363;
+}
+
+.contact-container{
+  height: 32rem;
+  
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+  
+  
+}
+.contact-container input{
+  width:25rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  
+}
+.contact-container textarea{
+  width:25rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  
+}
+.contact-container textarea{
+  height: 8rem;
+}
+.input-email{
+  width: 20rem;
+  background-color: #f0f0f0;
+  margin-top: 1rem;
+  padding: 10px;
+}
+.contact-input{
+  display: flex;
+  gap: 1rem;
+  
+}
+.contact-msg{
+  display: flex;
+  width: 50rem;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  border-bottom: 2px solid #080808;
+}
+textarea {
+  resize: none;
+  margin-top: 1rem;
+}
+.input-name{
+  height: 3rem;
+  width :120px;
+  background-color: #f0f0f0;
+  display: flex;
+  
+}
+.submit{
+  padding: 1rem 3rem;
+  margin:auto;
+  color: #fff;
+  background-color: #080808;
+  border-radius: 3px;
+  
+}
+i{
+  color: royalblue;
+  padding-left: 0.5rem;
+}
+
+.submit:hover{
+  background-color:#272727;
+  color: #fff;
+  cursor: pointer;
+}
+.footer{
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: #000 2px solid;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 1rem 0;
+  align-items: center;
+ 
+}
+
+
+.footer h3{
+  display: flex;
+  padding-right: 2rem;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  color: #141414;
+}
+.footer-socials{
+  width: 50%;
+}
+.footer-socials img{
+   height: 3rem;
+}
+.footer-icons {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 3rem;
+    margin-left: 2rem;
+}
+.footer-icons img{
+  height: 2.5rem;
+  
+}
+i{
+  height: 2rem;
+  padding-right: 0.5rem;
+  padding-top: 0.3rem;
+  color: #636363;
+}
+.footer-links{
+  display: flex;
+  gap: 4rem;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-right: 3rem;
+  
+}
+
+
+@media (width<880px) {
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    padding :2rem 0;
+    padding-right: 2rem;
+  }  
+  .navlinks{
+      display: none;
+    }
+    html{
+      font-size: 80%;
+      width: 100%;
+    }
+    .profile-pic img{
+      height: 28rem;
+      margin-top: 2rem;
+      
+    }
+    .profile{
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+    }
+    .profile-p3{
+      margin: auto;
+    }
+    .skills{
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+    }
+    .project-sec{
+      flex-wrap: wrap;
+    }
+    .contact-container{
+      flex-wrap: wrap;
+      
+    }
+    .contact-text{
+      padding: 0 0.35rem;
+    }
+    .footer{
+      flex-wrap: wrap;
+      display: flex;
+      
+    }
+    .footer-links{
+      display: none;
+    }
+    .contact-input{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .contact-email{
+      
+      display: flex;
+      justify-content: center;
+    }
+    .contact-msg{
+      
+      display: flex;
+      justify-content: center;
+    }
+}
+
+@media (width<400px) {
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    padding :2rem 0;
+    padding-right: 2rem;
+  }  
+  .navlinks{
+      display: none;
+    }
+    html{
+      font-size: 60%;
+      width: 100%;
+    }
+    .profile-pic img{
+      height: 28rem;
+      margin-top: 2rem;
+      
+    }
+    .profile{
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+    }
+    .profile-p3{
+      margin: auto;
+    }
+    .skills{
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+    }
+    .project-sec{
+      flex-wrap: wrap;
+    }
+    .contact-container{
+      flex-wrap: wrap;
+      
+    }
+    .contact-text{
+      padding: 0 0.35rem;
+    }
+    .footer{
+      flex-wrap: wrap;
+      display: flex;
+      
+    }
+    .footer-links{
+      display: none;
+    }
+    .contact-input{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .contact-email{
+      
+      display: flex;
+      justify-content: center;
+    }
+    .contact-msg{
+      
+      display: flex;
+      justify-content: center;
+    }
+    .footer h3{
+      display: flex;
+      padding: 0 1rem;
+      font-size: 1.4rem;
+      margin-right: 2rem;
+      margin-top: 1.5rem;
+      color: #141414;
+      justify-content: left;
+    }
+}
+
