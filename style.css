@@ -455,7 +455,7 @@ section .header{
   margin-top: 1rem;
   padding: 10px;
 }
-.contact-input{
+.contact-name{
   display: flex;
   gap: 1rem;
   
@@ -616,7 +616,7 @@ i{
     .footer-links{
       display: none;
     }
-    .contact-input{
+    .contact-name{
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -687,7 +687,7 @@ i{
     .footer-links{
       display: none;
     }
-    .contact-input{
+    .contact-name{
       flex-wrap: wrap;
       justify-content: center;
     }

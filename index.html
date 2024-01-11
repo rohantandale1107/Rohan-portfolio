@@ -156,21 +156,30 @@
             
         </div>
         <div class="contact-container">
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-input">
-                <input type="text" name="name" placeholder="First Name*" class="input-name" required>
-                <input type="text" name="name" placeholder="Last Name*" class="input-name" required>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="contact-name">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="text" name="name" placeholder="First Name*" class="input-name" required>
+                    <input type="text" name="name" placeholder="Last Name*" class="input-name" required>
+                    <input type="hidden" name="access_key" value="f35e9810-5d9e-4530-aa32-0751706caf20">
+                </form>
+                </div>
+                <div class="contact-email">
+                    <form action="https://api.web3forms.com/submit" method="POST"></form>
+                    <input type="email" name="email" placeholder="Enter your Email*" class="input-email" required>
+                    <input type="hidden" name="access_key" value="f35e9810-5d9e-4530-aa32-0751706caf20">
+                </form>
+                </div>
+                <div class="contact-msg">
+                    <form action="https://api.web3forms.com/submit" method="POST"></form>
+                    <textarea type="message" placeholder="Please Tell a bit About Yourself and Your Project*" class="input-name" required></textarea>
+                    <input type="hidden" name="access_key" value="f35e9810-5d9e-4530-aa32-0751706caf20">
+                </form>
+                </div>
+                <button class="submit">Submit</button>
+                
                 <input type="hidden" name="access_key" value="f35e9810-5d9e-4530-aa32-0751706caf20">
             </form>
-            <div class="contact-email">
-                <input type="email" name="email" placeholder="Enter your Email*" class="input-email" required>
-                <input type="hidden" name="access_key" value="f35e9810-5d9e-4530-aa32-0751706caf20">
-            </div>
-            <div class="contact-msg">
-                <textarea type="message" placeholder="Please Tell a bit About Yourself and Your Project*" class="input-name" required></textarea>
-                <input type="hidden" name="access_key" value="f35e9810-5d9e-4530-aa32-0751706caf20">
-            </div>
-            <button class="submit">Submit</button>
-            <input type="hidden" name="access_key" value="f35e9810-5d9e-4530-aa32-0751706caf20">
         </div>
     </section>
     <section class="footer">
